@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo dos Dados Js...</h1>
+        <div class="dice">
+            <p>Jogador 1</p>
+            <img src="images/dice1.png" id="check1">
+
+        </div>
+        <div class="dice">
+            <p>Jogador 2</p>
+            <img src="images/dice6.png" id="check2">
+
+        </div>
+        <div>
+            <button onclick="jogue()">Jogar</button>
+        </div>
+
+    </div>
+<script>
+    jogue=() =>{
+   
+    const jogador1 = Math.floor(Math.random() * 6) +1;
+    const jogador1dice = `images/dice${jogador1}.png`;
+    document.getElementById('check1').setAttribute('src',jogador1dice);
+
+    const jogador2 = Math.floor(Math.random() * 6) +1;
+    const jogador2dice = `images/dice${jogador2}.png`;
+    document.getElementById('check2').setAttribute('src',jogador2dice);
+
+    if(jogador1 > jogador2){
+        document.querySelector('h1').innerHTML="jogador1 venceu :)";
+    }else if(jogador2 > jogador1){
+        document.querySelector('h1').innerHTML="jogador2 venceu:)";
+    }else{
+        document.querySelector('h1').innerHTML="Empate";
+    }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body{
+    background: black;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.dice{
+    text-align: center;
+    display: inline-block;
+}
+h1{
+    margin: 5px;
+    text-shadow: 5px 0px white;
+    font-size: 6rem;
+    color: #f6b93b;
+    font-family: 'logo', sans-serif;
+}
+p{
+    font-size: 2rem;
+    color: #00b894;
+    text-shadow: 1px 1px white;
+}
+button{
+    padding: 10px;
+    background-color: #00b894;
+    color: white;
+}
+img{
+    width: 75%;
+}
